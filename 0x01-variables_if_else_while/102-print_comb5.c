@@ -8,43 +8,23 @@
  */
 int main(void)
 {
-int c;
-int d;
-int e;
-int f = 0;
-
-while (f < 10)
+int num1, num2;
+for (num1 = 0; num1 <= 98; num1++)
 {
-e = 0;
-while (e < 10)
-{
-d = 0;
-while (d < 10)
-{
-c = 0;
-while (c < 10)
-{
-if (!(f == c && e == d))
-{
-putchar('0' + f);
-putchar('0' + e);
+for (num2 = num1 + 1; num2 <= 99; num2++)
+	{
+putchar((num1 / 10) + '0');
+putchar((num1 % 10) + '0');
 putchar(' ');
-putchar('0' + d);
-putchar('0' + c);
-if (!(f + e == 18 && c + d == 17 && d == 9))
-{
+putchar((num2 / 10) + '0');
+putchar((num2 % 10) + '0');
+if (num1 == 98 && num2 == 99)
+continue;
 putchar(',');
 putchar(' ');
 }
 }
-c++;
-}
-d++;
-}
-e++;
-}
-f++;
-}
 putchar('\n');
 return (0);
 }
+
