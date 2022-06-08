@@ -1,18 +1,21 @@
-include "_putchar.h"
+#include "main.h"
 
 /**
+ *main = Entry point
  *print putchar
  *Return: 0
  */
 
 int main(void)
 {
-char c[10] = "Putchar";
-int i = 0;
-while (i<9)
-{
-_putchar('\n');
-}
-_putchar('\n');
+  _putchar('_');
+  _putchar('p');
+  _putchar('u');
+  _putchar('t');
+  _putchar('c');
+  _putchar('h');
+  _putchar('a');
+  _putchar('r');
+  _putchar('\n');
 return (0);
 }
