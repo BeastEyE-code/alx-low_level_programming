@@ -1,3 +1,5 @@
+#include <unistd.h>
+
 /**
 *_putchar - writes the charecater s to stdout
 *
